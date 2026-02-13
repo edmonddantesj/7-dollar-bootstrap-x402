@@ -87,6 +87,8 @@ After starting the server, open:
 - **Proof of revenue (DLMM):** ./PROOF_OF_REVENUE.md
 - **V6 signal layer (public spec):** ./docs/V6_SIGNAL_SPEC.md
 - **DLMM loop thesis:** ./docs/DLMM_LOOP_THESIS.md
+- **Master plan:** ./docs/MASTER_PLAN.md
+- **Security context card (public):** ./docs/SECURITY_CONTEXT_CARD.md
 
 ## Notes
 - Swap the mock verifier with real x402 proof verification in production.
