@@ -1,0 +1,17 @@
+{
+  "asset": "BTC-USD",
+  "timestamp": "2026-02-14T04:42:00+09:00",
+  "verdict": "HOLD",
+  "confidence": 0.55,
+  "agreement": "WEAK",
+  "risk": {
+    "var95": 0.0136,
+    "riskScore": 47.2
+  },
+  "evidence": [
+    "RSI near neutral; trend not decisive",
+    "Signals are mixed (some long, some short)",
+    "Risk elevated vs prior hours; position sizing reduced"
+  ],
+  "notes": "Sample output only. This repo does not include wallet control or execution automation."
+}

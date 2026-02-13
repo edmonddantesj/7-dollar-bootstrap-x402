@@ -85,6 +85,8 @@ After starting the server, open:
 - **Repo:** https://github.com/edmonddantesj/7-dollar-bootstrap-x402
 - **Demo video:** https://youtu.be/mWYOmNb489M
 - **Proof of revenue (DLMM):** ./PROOF_OF_REVENUE.md
+- **V6 signal layer (public spec):** ./docs/V6_SIGNAL_SPEC.md
+- **DLMM loop thesis:** ./docs/DLMM_LOOP_THESIS.md
 
 ## Notes
 - Swap the mock verifier with real x402 proof verification in production.
