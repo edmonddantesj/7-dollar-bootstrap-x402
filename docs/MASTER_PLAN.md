@@ -31,5 +31,14 @@ This document captures the long-horizon vision behind this hackathon repo. It in
 
 **Goal:** a truly autonomous-but-safe operator that can use the web like a human.
 
+## Hackathon relevance (x402 / Agentic Commerce)
+This hackathon repo is the **Phase 1 wedge** of the broader plan.
+
+- We demonstrate **pay-to-deliver** agentic commerce using x402 concepts.
+- Payment verification is **mocked** for clarity, but the loop is end-to-end and reproducible.
+- The delivery payload is designed to be **auditable** (see the V6 signal spec + sample output).
+- The DLMM loop provides the sustainability narrative: agents can fund ops and launches over time.
+- Security-first stance: no keys in repo; sensitive actions require safety gates and clear human context.
+
 ## Motto
 > We don’t just predict the future — we fund it.
