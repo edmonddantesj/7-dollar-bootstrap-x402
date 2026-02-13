@@ -43,6 +43,9 @@ npm install
 npm run dev
 ```
 
+### Terminal demo (GIF)
+![Pay-to-deliver terminal demo](./assets/demo.gif)
+
 ### Quick demo (curl)
 ```bash
 # 1) create order
