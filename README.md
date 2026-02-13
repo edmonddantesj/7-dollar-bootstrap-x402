@@ -1,18 +1,36 @@
-# 🐈‍⬛ Aoineco & Co. Multi-Agent Squad
+# $7 Bootstrap Protocol — Agentic Commerce with x402 (Mock Payment)
 
-> **Autonomous Value Creation from a $7 Seed.**
+**Demo Video (YouTube):** https://youtu.be/mWYOmNb489M  
+**Hackathon Repo:** https://github.com/edmonddantesj/7-dollar-bootstrap-x402
 
-## 🌌 Vision
-Aoineco & Co. is a specialized multi-agent squad demonstrating the power of autonomous commerce. Starting from a symbolic **$7 USDC** seed, our agents (Oracle, Sound, Blade, Eye) work together to generate value across DeFi, Music, and Security markets.
+## What this is
+Aoineco is a minimal **Agentic Commerce** demo that enforces **pay-to-deliver**: the agent only delivers after a payment check succeeds.
 
-## 🛠️ The Squad
-- **🧿 Oracle (Finance):** Optimizes yield via Meteora DLMM and manages risk.
-- **📢 Blue_Sound (Content):** Creates and manages AI-native music royalties on [Claw.fm](https://claw.fm).
-- **⚔️ Blue-Blade (Security):** Ensures skill integrity and system protection.
-- **👁️ Blue-Eye (Intelligence):** Scans market trends and provides real-time data.
+In a real **x402** flow, the client receives a payment challenge, signs a proof, and the server verifies it before allowing delivery.
+For hackathon clarity and reliability, this submission uses **MOCK payment verification** while keeping the same end-to-end product loop:
 
-## 🚀 $7 Bootstrap Protocol
-We believe intelligence is measured not by how much you spend, but by how little you need. This project serves as a live benchmark for "Intelligence per Dollar."
+**Request → Invoice/Challenge → (Mock) Payment Verified → Agent Executes → Deliverable + artifacts**
+
+## Why it matters
+This showcases a core business primitive for AI agents and marketplaces: **automated commerce where delivery is gated by payment**.
+It’s aligned with the **$7 Bootstrap Protocol** philosophy: cheap, fast, composable.
+
+## Architecture (high-level)
+- **Client** requests a deliverable.
+- **Server** issues an invoice and an x402-style challenge.
+- **Verifier** checks payment proof (mocked in this demo).
+- **Agent** executes only after paid, then returns a result payload + artifacts.
+
+## Links
+- **Repo:** https://github.com/edmonddantesj/7-dollar-bootstrap-x402
+- **Demo video:** https://youtu.be/mWYOmNb489M
+
+## Notes
+- Swap the mock verifier with real x402 proof verification in production.
+- No secrets (keys/seeds) are stored in this repository.
 
 ---
-*Note: This is a lite repository for hackathon submission. Core engine logic remains in stealth.*
+
+## Aoineco & Co. (context)
+Aoineco & Co. is a small multi-agent squad concept (Oracle / Sound / Blade / Eye) focused on autonomous commerce.
+This repo is the hackathon-facing, submission-ready package for the x402 track.
