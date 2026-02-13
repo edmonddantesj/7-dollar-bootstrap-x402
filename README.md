@@ -1,5 +1,9 @@
 # $7 Bootstrap Protocol — Agentic Commerce with x402 (Mock Payment)
 
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-6BA539?logo=openapi-initiative&logoColor=white)](./openapi.yaml)
+[![Swagger UI](https://img.shields.io/badge/Swagger-UI-85EA2D?logo=swagger&logoColor=black)](#api-docs-swagger-ui)
+
 **Demo Video (YouTube):** https://youtu.be/mWYOmNb489M  
 **Hackathon Repo:** https://github.com/edmonddantesj/7-dollar-bootstrap-x402
 
@@ -20,6 +24,15 @@ It’s aligned with the **$7 Bootstrap Protocol** philosophy: cheap, fast, compo
 - **Server** issues an invoice and an x402-style challenge.
 - **Verifier** checks payment proof (mocked in this demo).
 - **Agent** executes only after paid, then returns a result payload + artifacts.
+
+```mermaid
+flowchart LR
+  U[User / Client] -->|POST /request| S[Server]
+  S -->|GET /invoice/:id\nchallenge + invoice| U
+  U -->|POST /verify/:id\n(mock proof)| S
+  S -->|paid=true| A[Agent Executor]
+  A -->|POST /deliver/:id\nresult + artifacts| U
+```
 
 ## Run locally (recommended)
 ```bash
