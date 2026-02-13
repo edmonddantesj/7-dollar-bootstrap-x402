@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "node src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "demo": "node scripts/demo.js"
   },
   "dependencies": {
     "express": "^4.19.2",
