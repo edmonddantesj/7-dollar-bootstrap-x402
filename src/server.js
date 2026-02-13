@@ -1,5 +1,9 @@
 import express from 'express';
 import crypto from 'crypto';
+import fs from 'fs';
+import path from 'path';
+import YAML from 'yaml';
+import swaggerUi from 'swagger-ui-express';
 
 const app = express();
 app.use(express.json());
@@ -34,10 +38,25 @@ function requireOrder(req, res, next) {
   next();
 }
 
+// Swagger UI (local docs)
+const openApiPath = path.resolve(process.cwd(), 'openapi.yaml');
+let openApiDoc = null;
+try {
+  const raw = fs.readFileSync(openApiPath, 'utf8');
+  openApiDoc = YAML.parse(raw);
+} catch (e) {
+  console.warn('⚠️ Could not load openapi.yaml. Swagger UI will be unavailable.', e?.message || e);
+}
+
+if (openApiDoc) {
+  app.use('/docs', swaggerUi.serve, swaggerUi.setup(openApiDoc));
+}
+
 app.get('/', (req, res) => {
   res.json({
     name: '$7 Bootstrap Protocol — Agentic Commerce with x402 (Mock Payment)',
     ok: true,
+    docs: openApiDoc ? `${BASE_URL}/docs` : null,
     endpoints: {
       createOrder: 'POST /request',
       getInvoice: 'GET /invoice/:orderId',

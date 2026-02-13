@@ -9,6 +9,8 @@
     "start": "node src/server.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "swagger-ui-express": "^5.0.1",
+    "yaml": "^2.7.0"
   }
 }

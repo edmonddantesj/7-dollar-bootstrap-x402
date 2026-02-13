@@ -52,6 +52,10 @@ curl -s -X POST http://localhost:3000/verify/$ORDER_ID \
 curl -s -X POST http://localhost:3000/deliver/$ORDER_ID | node -p "JSON.stringify(JSON.parse(require('fs').readFileSync(0,'utf8')), null, 2)"
 ```
 
+## API docs (Swagger UI)
+After starting the server, open:
+- http://localhost:3000/docs/
+
 ## API spec
 - `openapi.yaml` (OpenAPI 3.0)
 
