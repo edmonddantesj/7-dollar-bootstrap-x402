@@ -1,0 +1,14 @@
+{
+  "name": "7-dollar-bootstrap-x402",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agentic Commerce demo (pay-to-deliver) using x402 concepts with mock payment verification.",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
