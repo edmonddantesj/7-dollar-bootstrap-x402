@@ -11,8 +11,14 @@ To strengthen proof that the **real x402 flow works end-to-end**, we validated a
 - ✅ Server returned `200 OK`
 - ✅ On-chain transaction visible on BaseScan
 
-## On-chain transaction
+## On-chain transactions (Base)
+
+### 1) Initial E2E proof tx
 - BaseScan: https://basescan.org/tx/0x1834074badf1d65fcc40226384fbea4e387f9c694102c3e3b1bd5205a1fcb565
+
+### 2) Buyer/Seller-separated commerce tx (stronger realism)
+- Buyer (payer): `0xa0F393bed9D0aaFccF13C4224A7c64F1652DF5d1`
+- BaseScan: https://basescan.org/tx/0xc5667fe5412cd073deeda83c3c1e0ff084ceee5f82d2294f05051ea51229d0f6
 
 ## 402 challenge evidence (curl)
 ```bash
