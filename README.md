@@ -84,6 +84,8 @@ After starting the server, open:
 ## Links
 - **Repo:** https://github.com/edmonddantesj/7-dollar-bootstrap-x402
 - **Demo video:** https://youtu.be/mWYOmNb489M
+- **x402 E2E proof (RelAI, Base):** ./proof/RELAI_X402_PROOF.md
+- **On-chain tx (BaseScan):** https://basescan.org/tx/0x1834074badf1d65fcc40226384fbea4e387f9c694102c3e3b1bd5205a1fcb565
 - **Proof of revenue (DLMM):** ./PROOF_OF_REVENUE.md
 - **V6 signal layer (public spec):** ./docs/V6_SIGNAL_SPEC.md
 - **DLMM loop thesis:** ./docs/DLMM_LOOP_THESIS.md
