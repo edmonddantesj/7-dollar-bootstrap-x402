@@ -1,0 +1,32 @@
+{
+  "sdna": "AOI-2026-0214-X402-COMMERCE-01",
+  "repo": "https://github.com/edmonddantesj/7-dollar-bootstrap-x402",
+  "commit": "a4cad31556ba6898827e360153b11299a07e7226",
+  "version": "0.1.0",
+  "created_at": "2026-02-14T09:23:36.281Z",
+  "artifacts": {
+    "latest_report": "",
+    "demo_video": "https://youtu.be/mWYOmNb489M",
+    "proof_urls": [
+      "https://basescan.org/tx/0x1834074badf1d65fcc40226384fbea4e387f9c694102c3e3b1bd5205a1fcb565",
+      "https://basescan.org/tx/0xc5667fe5412cd073deeda83c3c1e0ff084ceee5f82d2294f05051ea51229d0f6",
+      "https://basescan.org/tx/0xf41ed4606cf0fe6969c9b9579ff392c3f1ecd70d5d4e8d2a8cc10ee156db3418"
+    ],
+    "notes": "S-DNA MVP standard manifest (commit populated by scripts/gen_manifest.mjs)."
+  },
+  "attribution": {
+    "sources": [
+      {
+        "name": "x402",
+        "url": "https://github.com/coinbase/x402",
+        "license": "unknown"
+      },
+      {
+        "name": "RelAI x402 facilitator",
+        "url": "https://facilitator.x402.fi",
+        "license": "unknown"
+      }
+    ],
+    "royalty_plan_ref": "(external)"
+  }
+}

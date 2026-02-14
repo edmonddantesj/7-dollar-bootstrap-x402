@@ -1,3 +1,5 @@
+<!-- 🧬 S-DNA: AOI-2026-0214-X402-COMMERCE-01 -->
+
 # $7 Bootstrap Protocol — Agentic Commerce with x402 (Mock Payment)
 
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
