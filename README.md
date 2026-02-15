@@ -103,3 +103,31 @@ After starting the server, open:
 ## Aoineco & Co. (context)
 Aoineco & Co. is a small multi-agent squad concept (Oracle / Sound / Blade / Eye) focused on autonomous commerce.
 This repo is the hackathon-facing, submission-ready package for the x402 track.
+
+---
+
+## AOI Guard Cheat Sheet (When commits are blocked)
+
+This repo uses **AOI Guard** (default-deny). If a commit/push is blocked:
+
+1) See what you staged:
+```bash
+git status
+```
+
+2) If you added a new file/folder intentionally, allow it (with Edmond approval):
+```bash
+# edit allowlist
+nano .aoi-allowlist
+
+# then
+git add .aoi-allowlist
+```
+
+3) Re-stage only what you want, then commit:
+```bash
+git add <files>
+git commit -m "..."
+```
+
+Rule of thumb: **new paths must be added to `.aoi-allowlist` first**, otherwise commits will be blocked.
