@@ -21,3 +21,8 @@ docs/
 examples/
 proof/
 reports/
+
+# AOI security gate (CI + local)
+.gitignore
+aoi-core/
+aoi_core/
